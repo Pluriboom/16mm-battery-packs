@@ -25,4 +25,15 @@ To build one of these battery packs - you will need a few supplies - I will list
 - 6 inches of 5mm silver strips OR an equivalent amount of braided 22awg wire -- to join batteries in series 
 - Extra 22awg wire and heat shrink for protecting the soldering joints to the XLR jack.
 
-
+### 18650 Parts
+- 8 x M3 8mm allen head screws
+- 8 x M3 Threaded inserts for 3d printing (I prefer Ruthex brand)
+- 6 x M2 6mm allen head screws
+- 6 x M2 Threaded inserts for 3d printing (I prefer Ruthex brand)
+- 1 x 4 pin female XLR cable connector (Neutrike is best brand - I prefer the NC4FX)
+- 2ft of XLR cabling
+- 1 x PG9 Waterproof Cable Gland
+- 1 x 5a Voltage Regulator (XL4015 - I used the HiLetgo brand with good results)
+- 1 x Digital LED Voltmeter PRT-14313 ([best price can be found at Mouser](https://www.mouser.com/ProductDetail/SparkFun/PRT-14313)https://www.mouser.com/ProductDetail/SparkFun/PRT-14313))
+- 3 inches of 5mm silver strips OR an equivalent amount of braided 22awg wire -- to join batteries in series
+- Extra 22awg wire and heat shrink for protecting the soldering joints to the power button.
