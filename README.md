@@ -3,10 +3,10 @@ Battery pack designs with replaceable cells for use with 16mm cameras
 
 
 ## Problem
-Many 16mm cameras rely on battery packs that are no longer accessible or are prohibitively expensive. Often times these packs will just die over time and then become trash. To that end I decided to design a new pack which could utilize replaceable cells. This pack does not charge batteries
+Many 16mm cameras rely on battery packs that are no longer available or are prohibitively expensive. Often times these packs will just die over time and then become trash. To that end I decided to design a new pack which could utilize replaceable cells. This pack does not charge batteries
 
 ## Solution
-In this repository you will find the STL files needed to 3d print your own 16mm camera batteries. 
+In this repository you will find the STL files needed to 3d print your own 16mm camera battery packs. 
 
 My first iteration was a design specific to the Arri 16s camera - to utilize NIMH AA battery cells - which I use for quite a few other devices - and since I am not always shooting 16mm film, would love to share between my different devices. You can find those under the Arri 16s directory. This pack uses 7 x AA Batteries. 
 
