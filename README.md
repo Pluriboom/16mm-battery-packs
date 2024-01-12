@@ -21,7 +21,7 @@ To build one of these battery packs - you will need a few supplies - I will list
 - 8 x M3 8mm allen head screws
 - 2 x M3 8mm tapered allen head screws
 - 8 x M3 Threaded inserts for 3d printing (I prefer Ruthex brand)
-- 1 x 4 pin Female XLR chassis mount jack (Neutrik is best quality - the files are modeled after the Neutrik NC4FP-1 - so if your jacks (match he dimensions in the datasheet)[https://www.neutrik.com/media/8436/download/nc4fp-1-1.pdf?v=1] - they should work fine)
+- 1 x 4 pin Female XLR chassis mount jack (Neutrik is best quality - the files are modeled after the Neutrik NC4FP-1 - so if your jacks [match he dimensions in the datasheet](https://www.neutrik.com/media/8436/download/nc4fp-1-1.pdf?v=1) - they should work fine)
 - 6 inches of 5mm silver strips OR an equivalent amount of braided 22awg wire -- to join batteries in series 
 - Extra 22awg wire and heat shrink for protecting the soldering joints to the XLR jack.
 
