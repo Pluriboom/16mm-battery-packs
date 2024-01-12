@@ -36,7 +36,7 @@ To build one of these battery packs - you will need a few supplies - I will list
 - 2ft of XLR cabling
 - 1 x PG9 Waterproof Cable Gland
 - 1 x 5a Voltage Regulator (XL4015 - I used the HiLetgo brand with good results)
-- 1 x Digital LED Voltmeter PRT-14313 ([best price can be found at Mouser](https://www.mouser.com/ProductDetail/SparkFun/PRT-14313)https://www.mouser.com/ProductDetail/SparkFun/PRT-14313))
+- 1 x Digital LED Voltmeter PRT-14313 ([best price can be found at Mouser](https://www.mouser.com/ProductDetail/SparkFun/PRT-14313))
 - 4 x Battery Contact Spring Solder Lug ([NT5-1-ND at Digi-Key](https://www.digikey.com/en/products/detail/mpd-memory-protection-devices/SN-T5-1/2439583))
 - 4 x Battery Contact Solid Solder Lug ([SN-T5-2 at Digi-Key](https://www.digikey.com/en/products/detail/mpd-memory-protection-devices/SN-T5-2/2439587))
 - 3 inches of 5mm silver strips OR an equivalent amount of braided 22awg wire -- to join batteries in series
