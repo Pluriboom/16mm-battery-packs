@@ -1,4 +1,4 @@
-# Pluriboom 16mm Batteries
+# Pluriboom 16mm Battery Packs
 Battery pack designs with replaceable cells for use with 16mm cameras
 
 
