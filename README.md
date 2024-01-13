@@ -42,3 +42,7 @@ To build one of these battery packs - you will need a few supplies - I will list
 - 4 x Battery Contact Solid Solder Lug ([SN-T5-2 at Digi-Key](https://www.digikey.com/en/products/detail/mpd-memory-protection-devices/SN-T5-2/2439587))
 - 3 inches of 5mm silver strips OR an equivalent amount of braided 22awg wire -- to join batteries in series
 - Extra 22awg wire and heat shrink for protecting the soldering joints to the power button.
+
+
+## Special Thanks
+A special thanks to [ffleurey](https://www.thingiverse.com/ffleurey/designs) for their [battery box design](https://www.thingiverse.com/thing:1755397) on thingiverse. My main modifications to their designs were to make the contacts I was using press-fit instead of requiring glue, switching the batteries to an alternating pattern, and I also modified the bottom plates wiring guides.  
