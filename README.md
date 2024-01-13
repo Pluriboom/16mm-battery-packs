@@ -45,4 +45,4 @@ To build one of these battery packs - you will need a few supplies - I will list
 
 
 ## Special Thanks
-A special thanks to [ffleurey](https://www.thingiverse.com/ffleurey/designs) for their [battery box design](https://www.thingiverse.com/thing:1755397) on thingiverse. My main modifications to their designs were to make the contacts I was using press-fit instead of requiring glue, switching the batteries to an alternating pattern, and I also modified the bottom plates wiring guides.  
+A special thanks to [ffleurey](https://www.thingiverse.com/ffleurey/designs) for their [battery box design](https://www.thingiverse.com/thing:1755397) on thingiverse. My main modifications to their designs were to make the contacts I was using press-fit instead of requiring glue, switching the batteries to an alternating pattern, and I also modified the bottom plates wiring guides. For the 18650 pack I had to make quite a few changes to support the larger cells.
