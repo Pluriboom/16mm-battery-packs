@@ -11,7 +11,7 @@ Many 16mm cameras rely on battery packs that are no longer available or are proh
 ## Solution
 In this repository you will find the STL files needed to 3d print your own 16mm camera battery packs. 
 
-My first iteration was a design specific to the Arri 16s camera - to utilize 7 x **NIMH AA battery cells** - which I use for quite a few other devices - and so is rather convenient. You can find those under the NIMH directory. . 
+My first iteration was a design specific to the Arri 16s camera - to utilize 7 x **NIMH AA battery cells** - which I use for quite a few other devices - and so is rather convenient. You can find those under the NIMH directory.
 
 The second iteration is a more universal pack - this utilizes **button top protected 18650 lithium-ion cells** -  this pack is more complex as it involves a voltage regulator, a power button and a voltmeter. This pack can be used with any number of cameras that utilize a 4-pin xlr connector - as long as they draw 5 amps or less. You can find the files for this pack under the 18650 directory.
 
@@ -33,7 +33,7 @@ To build one of these battery packs - you will need a few supplies - I will list
 - 8 x M3 Threaded inserts for 3d printing (I prefer Ruthex brand)
 - 6 x M2 6mm allen head screws
 - 6 x M2 Threaded inserts for 3d printing (I prefer Ruthex brand)
-- 1 x 4 pin female XLR cable connector (Neutrike is best brand - I prefer the NC4FX)
+- 1 x 4 pin female XLR cable connector (Neutrik is best quality - I prefer the NC4FX)
 - 2ft of XLR cabling
 - 1 x PG9 Waterproof Cable Gland
 - 1 x 5a Voltage Regulator (XL4015 - I used the HiLetgo brand with good results)
