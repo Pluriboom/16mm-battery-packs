@@ -1,9 +1,10 @@
 # Pluriboom 16mm Battery Packs
 Battery pack designs with replaceable cells for use with 16mm cameras
 
+![battery packs](https://github.com/kamranjon/pluriboom-16mm-battery-packs/assets/3966239/7c333d91-380e-48c7-97ca-5c4fab63e699)
 
 ## Problem
-Many 16mm cameras rely on battery packs that are no longer available or are prohibitively expensive. Often times these packs will just die over time and then become trash. To that end I decided to design a new pack which could utilize replaceable cells, and be built for an affordable price. 
+Many 16mm cameras rely on battery packs that are no longer available or are prohibitively expensive. Often times these packs will just eventually die and then become trash. To that end I decided to design a new pack which could utilize replaceable cells, and be built for an affordable price. 
 
 **These packs do not charge batteries**
 
