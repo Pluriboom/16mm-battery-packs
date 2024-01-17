@@ -5,7 +5,7 @@
  */
 
 // The number of AA cells in your battery holder
-Cell_Count =7;
+Cell_Count =8;
 
 
 /*
@@ -75,6 +75,7 @@ module make_single_cell(cells, i) {
             cube(size=[.5, 11.1/2, 12], center=true);
     }
         
+    evenNumberOfCells = cells % 2 == 0;
 
     // solder flange cut-out
     translate([(50/2+3-7/2), -cells*15/2+15/2+15*i, 3/2])
@@ -89,8 +90,16 @@ module make_single_cell(cells, i) {
         cube(size=[7, 5.5, 5], center=true);
 
     if(i == cells- 1) {
-        translate([-(50/2)+4, -cells*15/2+15/2+15*i, 3/2])
-            cylinder(r=5.5/2, h=5, center=true, $fn = 50);
+        
+         if(evenNumberOfCells) {
+            translate([(50/2)-4, -cells*15/2+15/2+15*(cells - 1), 3/2])
+                cylinder(r=5.5/2, h=5, center=true, $fn = 50);
+        } else {
+            translate([-(50/2)+4, -cells*15/2+15/2+15*i, 3/2])
+                cylinder(r=5.5/2, h=5, center=true, $fn = 50);
+        }       
+        
+        
     }
     // polarity markings
     if(i % 2 == 0) {
@@ -99,7 +108,7 @@ module make_single_cell(cells, i) {
         translate([20, -cells*15/2+15/2+15*i, 4/2+4.5])
             cube(size=[2, 6, 4], center=true);
         translate([-20, -cells*15/2+15/2+15*i, 4/2+4.5])
-            cube(size=[6, 2, 4], center=true);
+            cube(size=[2, 6, 4], center=true);
     } else {
         translate([-20, -cells*15/2+15/2+15*i, 4/2+4.5])
                     cube(size=[6, 2, 4], center=true);
@@ -137,7 +146,6 @@ module battery_box(cells)
 				cube(size=[2, 15*cells, 11.5], center=true);
 			
 			// mounting flanges	
-            /*
 			translate([20, cells*15/2+4/2, 3/2+2])
 				cube(size=[7, 4, 3], center=true);
 
@@ -161,7 +169,14 @@ module battery_box(cells)
 
 			translate([-20, -(cells*15/2+4), 3/2+2])
 				cylinder(r=7/2, h=3, center=true, $fn = 60);
-            */
+            
+            
+            // side walls
+            translate([0, ((cells*15)/2), 9])
+                cube(size=[50+2+8, 1.5, 14], center=true);
+            translate([0, -((cells*15)/2), 9])
+                cube(size=[50+2+8, 1.5, 14], center=true);           
+            
 		}
 		
 		for (i=[0:cells-1])
@@ -171,11 +186,11 @@ module battery_box(cells)
 		
 		if (cells>=2)
 		{
-            translate([(50/2+3-7/2), 5, 3/2])
-                cube(size=[7, (cells*15) - 30, 5], center=true);
+            translate([(50/2+3-7/2), 0, 3/2])
+                cube(size=[7, (cells*15) - 15, 5], center=true);
             
-            translate([-(50/2+3-7/2), -5, 3/2])
-                cube(size=[7, (cells*15) - 30, 5], center=true);
+            translate([-(50/2+3-7/2), 0, 3/2])
+                cube(size=[7, (cells*15) - 15, 5], center=true);
 		}
 		
         
@@ -194,16 +209,38 @@ module battery_box(cells)
 		rotate(-90, [0, 0, 1])
 			edge(4, 5.5);
 
-		translate([-25/2, -cells*15/2+15/2+15*(cells-1), 2.5/2])
-			cube(size=[25, 2, 5.5], center=true);			
-	
-		translate([-3/2, -cells*15/2+15/2+15*(cells-1)+1, 2.5/2])
-		rotate(90, [0, 0, 1])
-			edge(4, 5.5);
 
-		translate([-3/2, -cells*15/2+15/2+15*(cells-1)-1, 2.5/2])
-		rotate(180, [0, 0, 1])
-			edge(4, 5.5);
+
+        evenNumberOfCells = cells % 2 == 0;
+        
+        cellForOutputX = evenNumberOfCells ? 25/2 : -25/2;
+        cellForOutputFlangeX = evenNumberOfCells ? 3/2 : -3/2;
+
+		translate([cellForOutputX, -cells*15/2+15/2+15*(cells-1), 2.5/2])
+			cube(size=[25, 2, 5.5], center=true);			
+
+
+
+        if(!evenNumberOfCells)
+        {
+            translate([cellForOutputFlangeX, -cells*15/2+15/2+15*(cells-1)+1, 2.5/2])
+            rotate(90, [0, 0, 1])
+                edge(4, 5.5);
+            
+            translate([cellForOutputFlangeX, -cells*15/2+15/2+15*(cells-1)-1, 2.5/2])
+            rotate(180, [0, 0, 1])
+                edge(4, 5.5);
+        } else {
+            translate([cellForOutputFlangeX, -cells*15/2+15/2+15*(cells-1)+1, 2.5/2])
+            edge(4, 5.5);
+            
+            translate([cellForOutputFlangeX, -cells*15/2+15/2+15*(cells-1)-1, 2.5/2])
+            rotate(-90, [0, 0, 1])
+                edge(4, 5.5);            
+            
+        }
+
+
 
 		// bottom polarity marking (+)
 		translate([7, -cells*15/2+15/2+15*0-4.5, 1.5/2])
@@ -231,16 +268,17 @@ module battery_box(cells)
 
 		// bottom cut-out for output wire
 		translate([0, 0, 2.5/2])
-			cube(size=[3, cells*15+5, 5.5], center=true);
+			cube(size=[4, cells*15+5, 5.5], center=true);
 
-		/*
+		
 		// cutout to ease battery removal
-		%translate([0, 0, 20/2+10/2])
+		translate([0, 0, 20/2+10/2])
 		rotate(90, [1, 0, 0])
-			cylinder(r=20/2, h=cells*15+5, center=true, $fn = 100);
-		*/
+			cylinder(r=20/2, h=cells*13, center=true, $fn = 100);
+		
 
 		// rounded corners on end plates
+        
 		translate([0, -cells*15/2, 20])
 		rotate(90, [0, 1, 0])
 			edge(4, 50+8+8+5);
@@ -252,12 +290,13 @@ module battery_box(cells)
 
 		translate([0, -cells*15/2, 16.5])
 		rotate(90, [0, 1, 0])
-			edge(3, 50+6);
+			edge(0, 50+6);
 
 		translate([0, cells*15/2, 16.5])
 		rotate(90, [0, 1, 0])
 		rotate(-90, [0, 0, 1])
-			edge(3, 50+6);
+			edge(0, 50+6);
+        
 	}
 }
 
