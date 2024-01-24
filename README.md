@@ -1,8 +1,7 @@
 # [Pluriboom](https://pluriboom.com/) 16mm Battery Packs
 
 Battery pack designs with replaceable cells for use with 16mm cameras
-
-![both-family-photo](https://github.com/Pluriboom/16mm-battery-packs/assets/3966239/07052f8e-24e7-4293-bb45-57f54a8ea0fe)
+![both-family-photo](https://github.com/Pluriboom/16mm-battery-packs/assets/3966239/ec01e7e2-1962-4549-aaab-7f479e3693dc)
 
 ## Problem
 
