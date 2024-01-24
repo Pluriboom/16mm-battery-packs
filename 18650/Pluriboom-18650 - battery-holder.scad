@@ -184,9 +184,9 @@ module battery_box(cells)
             }
             
             translate([0, ((cells*Cell_Diameter)/2), 11.5])
-                cube(size=[Cell_Length+2+8, 2, 19], center=true);
+                cube(size=[Cell_Length+2+8, 1.5, 19], center=true);
             translate([0, -((cells*Cell_Diameter)/2), 11.5])
-                cube(size=[Cell_Length+2+8, 2, 19], center=true);
+                cube(size=[Cell_Length+2+8, 1.5, 19], center=true);
 		}
         
         // mounting holes
